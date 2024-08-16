@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: darkblue;
+    grid-area: header;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    padding: 1%;
+    font-size: 20px;
+}
+
+aside{
+    grid-area: menubar;
+    background-color: rgb(195, 180, 180);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(195, 180, 180);
+}
+
+footer{
+    grid-area: footer;
+    background-color: white;
+}
+
+footer h2{
+    text-align: center;
+    color: black;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-areas: 
+        'header header'
+        'menubar main'
+        'footer footer'
+    ;
+    height: 100vh;
+}
+
+.asidebar{
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.asidebar h2{
+    margin-bottom: 8%;
+    margin-top: 8%;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 13%;
+}
+
+.asidebar h4{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 13%;
+}
+
+.asidebar span{
+    color: gray;
+}
+
+.seccion-productos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    width: 30%;
+}
+
+.card img{
+    width: 60%;
+    object-fit: cover;
+    margin-bottom: 2%;
+}
+
+.card h1{
+    margin-bottom: 4%;
+}
+
+.card h4{
+    margin-bottom: 4%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card button{
+    background-color: darkblue;
+    width: 100%;
+    padding: 1.5%;
+    color: white;
+    font-size: 18px;
+}
